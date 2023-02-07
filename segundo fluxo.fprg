@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 07:08:07 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtLRVJORUxPUy1QQzsyMDIzLTAxLTIzOzA2OjQ0OjA5IFBNOzM0NjA="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtLRVJORUxPUy1QQzsyMDIzLTAxLTIzOzA3OjA4OjA3IFBNOzQ7MzU3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, total, media" type="Real" array="False" size=""/>
+            <declare name="resultado" type="String" array="False" size=""/>
+            <assign variable="resultado" expression="&quot;&quot;"/>
+            <output expression="&quot;digite as 3 notas&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <assign variable="total" expression="nota1 + nota2 + nota3"/>
+            <assign variable="media" expression="total /3"/>
+            <if expression="media &gt;= 0">
+                <then>
+                    <if expression="media &gt;= 5">
+                        <then>
+                            <if expression="media &gt;= 7">
+                                <then>
+                                    <assign variable="resultado" expression="&quot;aprovado&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="resultado" expression="&quot;recupera&#231;&#227;o&quot;"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="resultado" expression="&quot;reprovado&quot;"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;sua media foi: &quot; &amp; media &amp; &quot;-&quot; &amp; resultado" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;invalido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
