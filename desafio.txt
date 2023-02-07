@@ -1,1 +1,6 @@
 Samuel Souto Pedra
+CONTEXTO
+Você trabalha em uma empresa de desenvolvimento de sistemas e seu gestor está implementando metodologias ágeis de desenvolvimento. 
+Nessa primeira etapa, você estará criando um repositório que irá receber as versões dos projetos. 
+Esse projeto terá uma equipe mista entre full-stack, front-end e back-end
+
